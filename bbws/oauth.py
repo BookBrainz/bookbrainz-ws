@@ -137,6 +137,9 @@ class MyRequestValidator(OAuth2RequestValidator):
     def __init__(self):
         pass
 
+    def client_authentication_required(self, request, *args, **kwargs):
+        return False
+
     def _clientgetter(self, client_id):
         return db.session.query(OAuthClient).filter_by(
             client_id=uuid.UUID(hex=client_id)
