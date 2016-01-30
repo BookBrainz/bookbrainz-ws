@@ -23,8 +23,8 @@ from bbschema import Relationship, RelationshipEntity, RelationshipRevision, \
     RelationshipData
 from flask_testing import TestCase
 
-from check_helper_functions import *
-from constants import *
+from ..check_helper_functions import *
+from ..constants import *
 
 
 class GetIDTests(TestCase):
