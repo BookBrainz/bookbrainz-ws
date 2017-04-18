@@ -23,11 +23,11 @@ from bbschema import create_all
 from werkzeug.test import Headers
 
 from bbws import create_app, db
-from delete_testing import DeleteTests
-from get_id_testing import GetIDTests
-from get_list_testing import GetListTests
-from post_testing import PostTests
-from put_testing import PutTests
+from requests_tests.delete_testing import DeleteTests
+from requests_tests.get_id_testing import GetIDTests
+from requests_tests.get_list_testing import GetListTests
+from requests_tests.post_testing import PostTests
+from requests_tests.put_testing import PutTests
 from .fixture import load_data
 
 
